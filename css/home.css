@@ -1,0 +1,30 @@
+body{
+  background-color:#161618;
+}
+
+.container-home {
+  color: #fffffc;
+  background-color: rgba(0, 0, 0, 0.1);
+  
+}
+
+.text-home{
+  max-width: 1096px;
+  width: 100%;
+  margin: 32px auto 0;
+  text-align: center;
+  
+}
+
+.text-home h1{
+  font-size: 58px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.text-home p{
+  font-size: 18px;
+  color: #c2c2c2;
+  font-weight: 400;
+  line-height: 1.5;
+
+}
