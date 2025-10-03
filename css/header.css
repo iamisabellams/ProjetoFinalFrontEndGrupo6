@@ -1,0 +1,59 @@
+.navbar_styles {
+  background-color: #161618;
+}
+
+.navbar_styles .logo_principal {
+  fill: #fffffc;
+  width: 2rem;
+  height: 2rem;
+}
+
+.navbar_styles .nome_site {
+  font-size: 1.5rem;
+  color: #fffffc;
+  font-weight: bold;
+}
+
+.navbar_styles .container-fluid {
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 0.35rem #fffffc;
+  outline: none;
+}
+
+.navbar_styles .hamburguer_menu {
+  color: #fffffc;
+  height: 32px;
+  width: 32px;
+}
+
+.navbar_styles .nav-link {
+  color: #fffffc;
+  font-size: 1.125rem;
+  border-radius: 8px;
+  border: 2px solid #2a2a2a;
+  padding: 5px 20px;
+}
+
+.navbar_styles .nav-link:hover {
+  color: #1f9ea3;
+}
+
+.navbar_styles .github_logo {
+  color: #fffffc;
+  width: 2rem;
+  height: 2rem;
+}
+
+.navbar_styles .github_logo:hover {
+  color: #1f9ea3;
+  transition: color 0.15s ease-in-out;
+  cursor: pointer;
+}
