@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body{
   background-color:#161618;
 }
@@ -89,3 +90,115 @@ body{
     -webkit-box-orient: vertical;
     text-overflow: ellipsis; 
 }
+=======
+.container-chamadaAcao {
+  position: relative;
+  color: #fffffc;
+  display: flex;
+}
+
+.img-chamadaAcao img {
+  object-fit: cover;
+}
+
+.text-chamadaAcao {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  padding: 20px 50px;
+  box-sizing: border-box;
+}
+
+.text-chamadaAcao h2 {
+  width: 100%;
+  margin: 0 0 8px 0;
+  font-size: 2.5rem;
+}
+
+.text-chamadaAcao p {
+  max-width: 60%;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.text-chamadaAcao button {
+  background-color: #1f9ea3;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  color: #fffffc;
+  border: none;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  height: fit-content;
+  transition: transform 0.2s ease;
+}
+
+.text-chamadaAcao button:hover {
+  background-color: #108c91;
+  transform: scale(1.1);
+}
+
+.container-servicos {
+  padding: 20px 50px;
+  text-align: left;
+  margin: 15px;
+}
+
+.container-servicos p {
+  font-size: 1rem;
+}
+
+.card-smartphone,
+.card-tablet,
+.card-tv,
+.card-laptop {
+  width: 100%;
+  height: 100%;
+  flex: 1;
+  background: #fffffc;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 5px;
+  background: linear-gradient(
+    90deg,
+    #101011 0%,
+    #108c91  100%
+  );
+}
+
+.cards-servicos3 {
+  display: contents;
+}
+
+.cards-servicos4 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 30px;
+}
+
+.cards-servicos4 p {
+  color: #fffffc;
+  font-size: 10px;
+  margin: 10px;
+  line-height: 1.5;
+}
+
+span,
+i {
+  font-size: 10px;
+  color: #fffffc;
+  margin: 5px;
+}
+>>>>>>> 09e08c6b505dde7de079d5dcb88cee7ed01c0fb0
