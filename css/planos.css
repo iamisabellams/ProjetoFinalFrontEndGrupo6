@@ -1,0 +1,134 @@
+/* ---------- RESET ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  color: #fff;
+  background: url("../img/imagem_home.png") no-repeat center center/cover;
+  min-height: 100vh;
+}
+
+/* precos */
+.price {
+  text-align: center;
+  padding: 60px 20px;
+  font-size: 2rem;
+}
+
+.price h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.price p {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  font-size: 1.3rem;
+  color: #fffffc;
+}
+
+.price h6 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+/* cards */
+.planos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.planos > div {
+  background: #161618;
+  border-radius: 15px;
+  padding: 25px;
+  text-align: left;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.planos > div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.8);
+}
+
+/* topo dos planos */
+.planos h2 {
+  font-size: 1.3rem;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #fffffc;
+}
+
+.planos h2 span {
+  display: block;
+  font-size: 0.9rem;
+  color: #fffffc;
+  font-weight: normal;
+}
+
+/* preco */
+.planos .price {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #fffffc;
+  margin-bottom: 15px;
+}
+
+.planos .price span {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #aaa;
+  font-weight: normal;
+}
+
+/* topicos planos */
+.planos .detalhes {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.planos .detalhes li {
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+  color: #c2c2c2;
+}
+
+.planos .detalhes strong {
+  color: #c2c2c2;
+}
+
+/* botoes escolher plano */
+.actions {
+  text-align: center;
+}
+
+.actions .choose, .actions .choose2 {
+  width: auto;
+  padding: 12px 30px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #108c91 ;
+  color: #fffffc;
+  font-weight: bold;
+  transition: border-color 0.2s ease-in-out;
+  display: inline-block;
+  border: 2px solid transparent;
+}
+
+.actions .choose:hover, .actions .choose2:hover {
+  border-color: #fffffc;
+}
+
+.choose2 {
+  margin-top: 29px;
+}
