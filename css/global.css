@@ -54,3 +54,10 @@ h5,
 h6 {
   text-wrap: balance;
 }
+
+.container{
+  /* colocar em todas as sections */
+  max-width: 1597px;
+  width: 100%;
+  margin: 0 auto;
+}
