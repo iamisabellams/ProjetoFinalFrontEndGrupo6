@@ -1,3 +1,78 @@
-main{
+body {
   font-family: "Poppins", sans-serif;
+  color: #f0f0f0;
+  background-color: #0f0f0f;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  font-family: "Poppins", sans-serif;
+}
+
+h1, h2 {
+  color: #fffffc;
+}
+
+.img-container {
+  position: relative;
+  text-align: center;
+}
+
+.sobre-destaque {
+  position: absolute;
+  top: 72%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  max-width: 1000px;
+  margin: -220px auto 60px;
+  padding: 20px;
+  text-align: center;
+  
+  font-size: 18px;
+  color: #108c91;
+  background: #252525;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgb(0, 0, 0);
+}
+
+.sobre-destaque > h1 {
+  color: #f0f0f0;
+  font-size: 70px;
+}
+
+.sobre-secoes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px;
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center;
+  font-size: 18px;
+  color: #108c91;
+}
+
+.sobre-secoes article {
+  background: #111111;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .sobre-secoes {
+    grid-template-columns: 1fr;
+  }
+
+  .sobre-destaque > h1 {
+    font-size: 40px;
+  }
+
+  .sobre-destaque {
+    font-size: 16px;
+    padding: 15px;
+  }
 }
