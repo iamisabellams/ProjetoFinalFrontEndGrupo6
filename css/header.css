@@ -24,11 +24,11 @@
   font-weight: bold;
 }
 
-.detalhe_nome_site {
+.navbar-brand svg, .navbar-brand span{
   transition: color 0.15s ease-in-out;
 }
 
-.detalhe_nome_site:hover {
+.navbar-brand svg:hover, .navbar-brand span:hover {
   color: #1f9ea3;
 }
 

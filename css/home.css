@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 body{
   background-color:#161618;
 }
@@ -46,8 +45,14 @@ body{
     left: -3%;
     width: fit-content;
 }
+.text-servicos h2{
+    color: #fffffc;
+}
+.text-servicos p{
+    color: #c2c2c2;
+}
 
-.text-explore{
+  .text-explore{
   width: 100%;
   margin: 0 auto;
   padding: 32px 0;
@@ -90,29 +95,36 @@ body{
     -webkit-box-orient: vertical;
     text-overflow: ellipsis; 
 }
-=======
 .container-chamadaAcao {
   position: relative;
   color: #fffffc;
   display: flex;
 }
+.img-chamadaAcao{
+  width: 100%;
+}
 
 .img-chamadaAcao img {
   object-fit: cover;
+    width: 100%;
+    height: auto;
 }
 
 .text-chamadaAcao {
+  display: flex;
+  align-items: center;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
+}
+.text-chamadaAcao-container{
   display: flex;
   flex-wrap: wrap;
   align-content: center;
   justify-content: space-between;
-  padding: 20px 50px;
   box-sizing: border-box;
 }
 
@@ -123,12 +135,11 @@ body{
 }
 
 .text-chamadaAcao p {
-  max-width: 60%;
   margin: 0;
   line-height: 1.5;
 }
 
-.text-chamadaAcao button {
+.text-chamadaAcao a {
   background-color: #1f9ea3;
   align-self: center;
   display: flex;
@@ -142,17 +153,17 @@ body{
   border-radius: 5px;
   height: fit-content;
   transition: transform 0.2s ease;
+  text-decoration: none;
 }
 
-.text-chamadaAcao button:hover {
+.text-chamadaAcao a:hover {
   background-color: #108c91;
   transform: scale(1.1);
 }
 
 .container-servicos {
-  padding: 20px 50px;
   text-align: left;
-  margin: 15px;
+  margin-bottom: 128px;
 }
 
 .container-servicos p {
@@ -177,28 +188,23 @@ body{
   );
 }
 
-.cards-servicos3 {
-  display: contents;
-}
-
-.cards-servicos4 {
+.cards-servicos {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 24px;
   margin-top: 30px;
 }
 
-.cards-servicos4 p {
+.cards-servicos p {
   color: #fffffc;
-  font-size: 10px;
+  font-size: 16px;
   margin: 10px;
   line-height: 1.5;
 }
 
-span,
-i {
-  font-size: 10px;
+
+.cards-servicos span,
+.cards-servicos i {
   color: #fffffc;
   margin: 5px;
 }
->>>>>>> 09e08c6b505dde7de079d5dcb88cee7ed01c0fb0

@@ -10,7 +10,7 @@ fetch(url, {
 })
   .then((response) => response.json())
   .then((data) => {
-    const movies = data.results.slice(6, 12);
+    const movies = data.results.slice(0, 6);
     const carouselInner = document.getElementById("carousel-inner");
     carouselInner.innerHTML = "";
 
