@@ -1,32 +1,35 @@
-/* ---------- RESET ---------- */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Poppins, sans-serif;
-  color: #fff;
-  background: url("../img/imagem_home.png") no-repeat center center/cover;
-  min-height: 100vh;
-}
 
 /* precos */
+.main-planos{
+  position: relative;
+}
+.main-planos::after{
+  content: '';
+  background-image: url(../img/imagem_home.png);
+  background-color: rgba(0, 0, 0, 0.5);
+  filter: opacity(0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
 .price {
   text-align: center;
-  padding: 60px 20px;
-  font-size: 2rem;
+  margin: 128px auto;
 }
 
 .price h1 {
-  font-size: 2rem;
+  color: #fffffc;
+  font-size: 3rem;
   margin-bottom: 10px;
 }
 
 .price p {
   max-width: 700px;
-  margin: 0 auto 40px;
+  margin: 0 auto 64px;
   font-size: 1.3rem;
   color: #fffffc;
 }
@@ -75,14 +78,18 @@ body {
 }
 
 /* preco */
-.planos .price {
+.planos .price-plano {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 1.6rem;
   font-weight: bold;
   color: #fffffc;
   margin-bottom: 15px;
+  text-align: center;
 }
 
-.planos .price span {
+.planos .price-plano span {
   font-size: 1rem;
   font-weight: bold;
   color: #aaa;
@@ -93,6 +100,7 @@ body {
 .planos .detalhes {
   list-style: none;
   margin-bottom: 20px;
+  min-height: 328px;
 }
 
 .planos .detalhes li {
