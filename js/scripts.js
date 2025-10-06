@@ -1,22 +1,21 @@
 const url =
-  "https://api.themoviedb.org/3/discover/movie?api_key=860791a45dc8afd8c08a1257751913f5&include_adult=false&include_video=false&language=pt-BR&page=1&sort_by=popularity.desc&year=2020";
+  "https://api.themoviedb.org/3/discover/movie?api_key=860791a45dc8afd8c08a1257751913f5&include_adult=false&include_video=false&language=pt-BR&page=1&region=BR&sort_by=popularity.desc&with_original_language=en&year=2018";
 
 fetch(url, {
   method: "GET",
   headers: {
     Accept: "application/json",
-    Authorization: "860791a45dc8afd8c08a1257751913f5",
   },
 })
   .then((response) => response.json())
   .then((data) => {
-    const movies = data.results.slice(0, 6);
+    const movies = data.results.slice(0, 20);
     const carouselInner = document.getElementById("carousel-inner");
     carouselInner.innerHTML = "";
 
     for (let i = 0; i < movies.length; i += 2) {
       const div = document.createElement("div");
-      div.classList.add("carousel-item");
+      div.classList.add("carousel-item"); 
 
       if (i === 0) {
         div.classList.add("active");
