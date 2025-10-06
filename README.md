@@ -5,8 +5,8 @@ Assista, descubra e conecte-se com o entretenimento!
 O **SerraFlix** é uma plataforma web desenvolvida como projeto final da disciplina Frontend Essencial do Serratec.
 Inspirado nos grandes serviços de streaming, o site foi criado para apresentar nossos planos mensais e conectar usuários aos representantes do serviço, oferecendo uma experiência moderna e visualmente imersiva.
 
-💡 Ainda em expansão, o SerraFlix está evoluindo para se tornar uma plataforma completa, com:
- - Páginas dedicadas para exibição de filmes;
+Ainda em expansão, o SerraFlix está evoluindo para se tornar uma plataforma completa, com:
+- Páginas dedicadas para exibição de filmes;
 - Campo de busca inteligente;
 - E a possibilidade de assinatura direta pelo site, sem necessidade de contato externo.
 
@@ -39,7 +39,7 @@ Inspirado nos grandes serviços de streaming, o site foi criado para apresentar 
 O código consome os dados da API usando o método fetch() e exibe os 20 primeiros filmes mais aclamados
 Em telas grandes, o carrossel mostra dois filmes por vez, e em dispositivos menores, um filme por vez, garantindo responsividade.
 
-## 🌐 Deploy
+## Deploy
 
 - O projeto está hospedado no GitHub Pages e pode ser acessado aqui:
 [**SerraFlix**](https://iamisabellams.github.io/ProjetoFinalFrontEndGrupo6/pages/sobre.html)  
@@ -48,7 +48,7 @@ Em telas grandes, o carrossel mostra dois filmes por vez, e em dispositivos meno
 
 - 🔗 Código no GitHub
 
-## 👩‍💻 Integrantes do Grupo
+## Integrantes do Grupo
 
 - Amanda Lisboa
 - Isabella Medeiros
@@ -56,7 +56,7 @@ Em telas grandes, o carrossel mostra dois filmes por vez, e em dispositivos meno
 - Bruno Marchiori
 - Pedro Sant' Anna
 
-## 📈 Melhorias Futuras
+## Melhorias Futuras
 
 - Criar uma página exclusiva para exibição de filmes.
 
@@ -66,7 +66,7 @@ Em telas grandes, o carrossel mostra dois filmes por vez, e em dispositivos meno
 
 - Melhorar a responsividade em telas intermediárias.
 
-## 🏁 Conclusão
+## Conclusão
 
 O **SerraFlix** é um projeto que une criatividade e aprendizado, desenvolvido com foco em boas práticas de Frontend, uso de API e design responsivo.
 Mesmo em sua versão inicial, já demonstra as principais habilidades aprendidas ao longo da disciplina. 
