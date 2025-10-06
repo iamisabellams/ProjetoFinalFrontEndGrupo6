@@ -7,7 +7,6 @@
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
 }
 
-
 .sobre-destaque {
   position: absolute;
   top: 72%;
@@ -18,9 +17,8 @@
   margin: -220px auto 60px;
   padding: 20px;
   text-align: center;
-  
   font-size: 18px;
-  color: #108c91;
+  color:#c2c2c2;
   background: #252525;
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgb(0, 0, 0);
@@ -43,7 +41,7 @@
   padding: 0 20px;
   text-align: center;
   font-size: 18px;
-  color: #108c91;
+  color: #c2c2c2;
 }
 
 .sobre-secoes article {
@@ -52,7 +50,27 @@
   box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
   padding: 20px;
 }
+@media (max-width: 1240px) {
+  .img-container {
+    position: static; 
+  }
 
+  .sobre-destaque {
+    position: static; 
+    top: auto;
+    left: auto;
+    transform: none; 
+    margin: 30px auto;
+    max-width: 90%;
+    font-size: 16px;
+    padding: 15px;
+    background: #111111;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+  }
+  .img-container {
+    box-shadow: none;
+  }
+}
 @media (max-width: 768px) {
   .sobre-secoes {
     grid-template-columns: 1fr;
@@ -65,5 +83,13 @@
   .sobre-destaque {
     font-size: 16px;
     padding: 15px;
+  }
+  #img-sobre{
+    height: 480px;
+    object-fit: cover;
+  }
+  
+  footer {
+    margin-top: 8px;
   }
 }
