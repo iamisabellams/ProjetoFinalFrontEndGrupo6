@@ -44,10 +44,6 @@ Em telas grandes, o carrossel mostra dois filmes por vez, e em dispositivos meno
 - O projeto está hospedado no GitHub Pages e pode ser acessado aqui:
 [**SerraFlix**](https://iamisabellams.github.io/ProjetoFinalFrontEndGrupo6/pages/sobre.html)  
 
-- 🗂️ Repositório do Projeto
-
-- 🔗 Código no GitHub
-
 ## Integrantes do Grupo
 
 - Amanda Lisboa
