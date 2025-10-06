@@ -15,48 +15,70 @@ fetch(url, {
     carouselInner.innerHTML = "";
 
     for (let i = 0; i < movies.length; i += 2) {
-      const movie1 = movies[i];
-      const movie2 = movies[i + 1];
-
       const div = document.createElement("div");
       div.classList.add("carousel-item");
 
       if (i === 0) {
         div.classList.add("active");
       }
-
-      div.innerHTML = `
-        <div class="row justify-content-center">
-          <div class="col-6">
-            <div class="card d-flex flex-row align-items-center border-0 rounded-4" style="background-color:#1A1A1A">
-              <img src="https://image.tmdb.org/t/p/w500${movie1.poster_path}" 
-                   class="w-25 d-block object-fit-cover rounded-start-4" style="height:290px;" alt="${movie1.title}">
-              <div class="card-body text-center">
-                <h5 class="card-title" style="color:#fffffc">${movie1.title}</h5>
-                <p class="card-description" style="color:#c2c2c2">${movie1.overview}</p>
+      const larguraDaTela = window.innerWidth;
+      if (larguraDaTela <= 1025) {
+        const movie = movies[i];
+        div.innerHTML = `
+          <div class="row justify-content-center">
+            <div class="col-md">
+              <div class="card d-flex flex-row align-items-center border-0 rounded-4" style="background-color:#1A1A1A">
+                <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" 
+                     class="w-25 d-block object-fit-cover rounded-start-4" style="height:290px;" alt="${movie.title}">
+                <div class="card-body text-center">
+                  <h5 class="card-title" style="color:#fffffc">${movie.title}</h5>
+                  <p class="card-description" style="color:#c2c2c2">${movie.overview}</p>
+                </div>
               </div>
             </div>
           </div>
-
-          ${
-            movie2
-              ? `
-          <div class="col-6">
-            <div class="card d-flex flex-row align-items-center border-0 rounded-4" style="background-color:#1A1A1A">
-              <img src="https://image.tmdb.org/t/p/w500${movie2.poster_path}" 
-                   class="w-25 d-block object-fit-cover rounded-start-4" style="height:290px;" alt="${movie2.title}">
-              <div class="card-body text-center">
-                <h5 class="card-title" style="color:#fffffc">${movie2.title}</h5>
-                <p class="card-description" style="color:#c2c2c2">${movie2.overview}</p>
+        `;
+      } else {
+        const movie1 = movies[i];
+        const movie2 = movies[i + 1];
+        div.innerHTML = `
+          <div class="row justify-content-center">
+            <div class="col-6">
+              <div class="card d-flex flex-row align-items-center border-0 rounded-4" style="background-color:#1A1A1A">
+                <img src="https://image.tmdb.org/t/p/w500${movie1.poster_path}" 
+                     class="w-25 d-block object-fit-cover rounded-start-4" style="height:290px;" alt="${
+                       movie1.title
+                     }">
+                <div class="card-body text-center">
+                  <h5 class="card-title" style="color:#fffffc">${
+                    movie1.title
+                  }</h5>
+                  <p class="card-description" style="color:#c2c2c2">${
+                    movie1.overview
+                  }</p>
+                </div>
               </div>
             </div>
+  
+            ${
+              movie2
+                ? `
+            <div class="col-6">
+              <div class="card d-flex flex-row align-items-center border-0 rounded-4" style="background-color:#1A1A1A">
+                <img src="https://image.tmdb.org/t/p/w500${movie2.poster_path}" 
+                     class="w-25 d-block object-fit-cover rounded-start-4" style="height:290px;" alt="${movie2.title}">
+                <div class="card-body text-center">
+                  <h5 class="card-title" style="color:#fffffc">${movie2.title}</h5>
+                  <p class="card-description" style="color:#c2c2c2">${movie2.overview}</p>
+                </div>
+              </div>
+            </div>
+            `
+                : ""
+            }
           </div>
-          `
-              : ""
-          }
-        </div>
-      `;
-
+        `;
+      }
       carouselInner.appendChild(div);
     }
   })

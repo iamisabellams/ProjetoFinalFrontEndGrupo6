@@ -45,6 +45,7 @@ body{
     left: -3%;
     width: fit-content;
 }
+
 .text-servicos h2{
     color: #fffffc;
 }
@@ -61,6 +62,8 @@ body{
 
 .container-explore{
   margin-bottom: 128px;
+  width: calc(100% - 64px);
+  padding: 0 32px;
 }
 
 .container-exploreFilmes{
@@ -84,8 +87,7 @@ body{
 
 .card-body{
   padding: 0 64px;
-
-
+  width: calc(100% - 128px);
 }
 .card-description{
     margin-top: 16px;
@@ -164,6 +166,7 @@ body{
 .container-servicos {
   text-align: left;
   margin-bottom: 128px;
+  width: calc(100% - 24px);
 }
 
 .container-servicos p {
@@ -227,6 +230,34 @@ body{
   }
   .text-chamadaAcao h2 {
     font-size: 2rem;
+  }
+  .container-servicos{
+    margin-bottom: 64px;
+  }
+  .container-explore{
+    padding: 0 12px;
+    width: calc(100% - 24px);
+    margin: 0 12px 64px;
+  }
+  .card-body{
+    padding: 0 16px;
+    width: calc(100% - 32px);
+    
+  }
+  .container-home{
+    padding: 0 12px;
+    width: calc(100% - 24px);
+    margin: 0 12px 64px;
+  }
+  .text-home h1{
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 16px;
+
+  }
+  .container-home img{
+    height: 480px;
+    object-fit: cover;
   }
 }
 
